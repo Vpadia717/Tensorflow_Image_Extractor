@@ -1,6 +1,6 @@
 # Tensorflow Image Extractor
 
-<p align="center"><br><img src="images/Main.svg" alt="drawing" height="450"/></p>
+<a href="https://www.tensorflow.org" align="center"><br><img src="images/Main.svg" alt="drawing" height="450"/></a>
 
 You need to install **TensorFlow** from [here](https://www.tensorflow.org/install)
 
