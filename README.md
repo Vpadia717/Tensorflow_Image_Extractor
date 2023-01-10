@@ -188,12 +188,9 @@ plt.imshow(image_np_with_detections[0])
 plt.show()
 ```
 Reference Images : <br>
-	<br><img src="images/download.png" alt="drawing" height="650"/>
-	<img src="app/src/main/res/drawable/Login.svg" alt="drawing" height="450"/>
-	<img src="app/src/main/res/drawable/SignUp.svg" alt="drawing" height="450"/>
-	<br><img src="app/src/main/res/drawable/Dashboard.svg" alt="drawing" height="450"/>
-	<img src="app/src/main/res/drawable/Post Creation.svg" alt="drawing" height="450"/>
-	<img src="app/src/main/res/drawable/View Post.svg" alt="drawing" height="450"/>
+	<br><img src="images/download.png" alt="drawing" height="600"/><br>
+	<img src="images/mark_objects.png" alt="drawing" height="600"/><br>
+	<img src="images/border_objects.png" alt="drawing" height="650"/>
 	
 This is the README file for Tensorflow Image Extractor repository. [^1]
 
