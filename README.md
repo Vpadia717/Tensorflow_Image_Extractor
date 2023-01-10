@@ -117,8 +117,15 @@ COCO17_HUMAN_POSE_KEYPOINTS = [(0, 1),
  (12, 14),
  (14, 16)]
 ```
+## Loading an image
 
-Reference Code :
+Let's try the model on a simple image. To help with this, we provide a list of test images.
+
+Here are some simple things to try out if you are curious:
+* Try running inference on your own images, just upload them to colab and load the same way it's done in the cell below.
+* Modify some of the input images and see if detection still works.  Some simple things to try out here include flipping the image horizontally, or converting to grayscale (note that we still expect the input image to have 3 channels).
+
+**Be careful:** when using images with an alpha channel, the model expect 3 channels images and the alpha will count as a 4th.
 ```Python
 #@title Image Selection (don't forget to execute the cell!) { display-mode: "form"}
 selected_image = 'Beach' # @param ['Beach', 'Dogs', 'Naxos Taverna', 'Beatles', 'Phones', 'Birds']
