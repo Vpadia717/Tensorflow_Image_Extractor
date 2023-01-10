@@ -188,9 +188,10 @@ plt.imshow(image_np_with_detections[0])
 plt.show()
 ```
 ## Reference images : <br>
-	<img src="images/download.png" alt="drawing" height="600"/><br><br>
-	<img src="images/mark_objects.png" alt="drawing" height="600"/><br><br>
-	<img src="images/border_objects.png" alt="drawing" height="600"/>
+
+<img src="images/download.png" alt="drawing" height="600"/><br><br>
+<img src="images/mark_objects.png" alt="drawing" height="600"/><br><br>
+<img src="images/border_objects.png" alt="drawing" height="600"/>
 	
 This is the README file for Tensorflow Image Extractor repository. [^1]
 
