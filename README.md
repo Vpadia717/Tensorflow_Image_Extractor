@@ -126,6 +126,7 @@ Here are some simple things to try out if you are curious:
 * Modify some of the input images and see if detection still works.  Some simple things to try out here include flipping the image horizontally, or converting to grayscale (note that we still expect the input image to have 3 channels).
 
 **Be careful:** when using images with an alpha channel, the model expect 3 channels images and the alpha will count as a 4th.
+
 ```Python
 #@title Image Selection (don't forget to execute the cell!) { display-mode: "form"}
 selected_image = 'Beach' # @param ['Beach', 'Dogs', 'Naxos Taverna', 'Beatles', 'Phones', 'Birds']
@@ -150,7 +151,14 @@ plt.show()
 ```
 Mask R-CNN uses anchor boxes to detect multiple objects, objects of different scales, and overlapping objects in an image. This improves the speed and efficiency for object detection. Anchor boxes are a set of predefined bounding boxes of a certain height and width. Faster R-CNN is a single-stage model that is trained end-to-end. It uses a novel region proposal network (RPN) for generating region proposals, which save time compared to traditional algorithms like Selective Search. It uses the ROI Pooling layer to extract a fixed-length feature vector from each region proposal. Convolutional neural network is composed of multiple building blocks, such as convolution layers, pooling layers, and fully connected layers, and is designed to automatically and adaptively learn spatial hierarchies of features through a backpropagation algorithm.
 
-Reference Code : 
+## Doing the inference
+
+To do the inference we just need to call our TF Hub loaded model.
+
+Things you can try:
+* Print out `result['detection_boxes']` and try to match the box locations to the boxes in the image.  Notice that coordinates are given in normalized form (i.e., in the interval [0, 1]).
+* inspect other output keys present in the result. A full documentation can be seen on the models documentation page (pointing your browser to the model handle printed earlier)
+
 ```Python
 label_id_offset = 0
 image_np_with_detections = image_np.copy()
