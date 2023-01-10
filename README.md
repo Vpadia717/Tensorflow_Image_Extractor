@@ -4,8 +4,7 @@
 
 You need to install **TensorFlow** from [here](https://www.tensorflow.org/install)
 
-WASSCL R-CNN is validated on the PASCAL VOC 2007 benchmark, and obtains 90% of a fully- supervised Faster R-CNN's performance (measured using mAP) with only 15% of fully-supervised annotations together with image-level annotations for the rest images. The problem of object localization is the most difficult part of object detection. One approach is that we use sliding window of different size to locate objects in the image.
-
+WASSCL R-CNN is validated on the PASCAL VOC 2007 benchmark, and obtains 90% of a fully- supervised Faster R-CNN's performance (measured using mAP) with only 15% of fully-supervised annotations together with image-level annotations for the rest images. The problem of object localization is the most difficult part of object detection. One approach is that we use sliding window of different size to locate objects in the image. Convolutional Neural Network. CNN is a supervised type of Deep learning, most preferable used in image recognition and computer vision.
 
 Reference Code :
 ```Python
