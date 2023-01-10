@@ -1,6 +1,6 @@
 # Tensorflow Image Extractor
 
-<a href="https://www.tensorflow.org" align="center"><br><img src="images/Main.svg" alt="drawing" height="450"/></a>
+<a href="https://www.tensorflow.org" align="center"><br><img src="images/Main.svg" alt="drawing" height="300"/></a>
 
 You need to install **TensorFlow** from [here](https://www.tensorflow.org/install)
 
@@ -188,7 +188,7 @@ plt.imshow(image_np_with_detections[0])
 plt.show()
 ```
 Reference Images : <br>
-	<br><img src="app/src/main/res/drawable/Splash.svg" alt="drawing" height="450"/>
+	<br><img src="images/download.png" alt="drawing" height="650"/>
 	<img src="app/src/main/res/drawable/Login.svg" alt="drawing" height="450"/>
 	<img src="app/src/main/res/drawable/SignUp.svg" alt="drawing" height="450"/>
 	<br><img src="app/src/main/res/drawable/Dashboard.svg" alt="drawing" height="450"/>
