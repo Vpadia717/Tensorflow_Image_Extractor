@@ -10,29 +10,27 @@ The *Sarpanch* can view the posts **_also he can make a notice for whole village
 
 1. You need to install TensorFlow Lite from [here](https://www.tensorflow.org/)
 
-```Java
-new Handler().postDelayed(new Runnable() {
-	@Override
-	public void run() {
-	
-		onBoardingScreen = getSharedPreferences("onBoardingScreen", MODE_PRIVATE);
-                boolean isFirstTime = onBoardingScreen.getBoolean("firstTime", true);
+```Python
+#@title Image Selection (don't forget to execute the cell!) { display-mode: "form"}
+selected_image = 'Beach' # @param ['Beach', 'Dogs', 'Naxos Taverna', 'Beatles', 'Phones', 'Birds']
+flip_image_horizontally = False #@param {type:"boolean"}
+convert_image_to_grayscale = False #@param {type:"boolean"}
 
-                if (isFirstTime) {
+image_path = IMAGES_FOR_TEST[selected_image]
+image_np = load_image_into_numpy_array(image_path)
 
-                    SharedPreferences.Editor editor = onBoardingScreen.edit();
-                    editor.putBoolean("firstTime", false);
-                    editor.commit();
+# Flip horizontally
+if(flip_image_horizontally):
+  image_np[0] = np.fliplr(image_np[0]).copy()
 
-                    startActivity(new Intent(MainActivity.this, OnBoardingScreen.class));
-                    finish();
-                } else {
-                    startActivity(new Intent(MainActivity.this, LoginActivity.class));
-                    finish();
-		}
-	}
-}, SPLASH_TIMER);
+# Convert image to grayscale
+if(convert_image_to_grayscale):
+  image_np[0] = np.tile(
+    np.mean(image_np[0], 2, keepdims=True), (1, 1, 3)).astype(np.uint8)
 
+plt.figure(figsize=(24,32))
+plt.imshow(image_np[0])
+plt.show()
 ```
 
 ### Important Instructions :
