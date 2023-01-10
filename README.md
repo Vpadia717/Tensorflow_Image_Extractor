@@ -1,14 +1,10 @@
 # Tensorflow Image Extractor
 
-Here we have made a Village helping application using java libraries like **Lottie** or **_TensorFlow Lite_**.
+Here I have made a Image Exatrator using AI and ML frameworks i.e. **Tensorflow**.
 
 <p align="center"><br><img src="app/src/main/res/drawable/villageera.svg" alt="drawing" height="650"/></p>
 
-It is a *Villager supporting app* where the user will get **_A right for making post regarding the complaints in the village also they can suggest or advice_**.
-
-The *Sarpanch* can view the posts **_also he can make a notice for whole village with in his finger tips_**.
-
-1. You need to install TensorFlow Lite from [here](https://www.tensorflow.org/)
+1. You need to install TensorFlow from [here](https://www.tensorflow.org/install)
 
 ```Python
 #@title Image Selection (don't forget to execute the cell!) { display-mode: "form"}
@@ -32,11 +28,6 @@ plt.figure(figsize=(24,32))
 plt.imshow(image_np[0])
 plt.show()
 ```
-
-### Important Instructions :
-
-* The *Admin* or *Sarpanch* needs to login to utilize the services.
-
 Reference Code : 
 ```Python
 label_id_offset = 0
@@ -74,6 +65,6 @@ Reference Images : <br>
 	<img src="app/src/main/res/drawable/Post Creation.svg" alt="drawing" height="450"/>
 	<img src="app/src/main/res/drawable/View Post.svg" alt="drawing" height="450"/>
 	
-This is the README file for Village Era repository. [^1]
+This is the README file for Tensorflow Image Extractor repository. [^1]
 
-[^1]: By : Village Era.
+[^1]: By : Vivek Padia.
