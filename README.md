@@ -2,7 +2,7 @@
 
 Here I have made a Image Exatrator using AI and ML frameworks i.e. **Tensorflow**.
 
-<p align="center"><br><img src="images/Tensorflow.svg" alt="drawing" height="650"/></p>
+<p align="center"><br><img src="images/Main.svg" alt="drawing" height="450"/></p>
 
 1. You need to install TensorFlow from [here](https://www.tensorflow.org/install)
 
