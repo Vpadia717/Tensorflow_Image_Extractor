@@ -6,6 +6,8 @@ You need to install **TensorFlow** from [here](https://www.tensorflow.org/instal
 
 WASSCL R-CNN is validated on the PASCAL VOC 2007 benchmark, and obtains 90% of a fully- supervised Faster R-CNN's performance (measured using mAP) with only 15% of fully-supervised annotations together with image-level annotations for the rest images. The problem of object localization is the most difficult part of object detection. One approach is that we use sliding window of different size to locate objects in the image. Convolutional Neural Network. CNN is a supervised type of Deep learning, most preferable used in image recognition and computer vision.
 
+Suppose you are working with MNIST dataset, you know each image in MNIST is 28 x 28 x 1(black & white image contains only 1 channel). Total number of neurons in input layer will 28 x 28 = 784, this can be manageable. What if the size of image is 1000 x 1000 which means you need 10⁶ neurons in input layer. Oh! This seems a huge number of neurons are required for operation. It is computationally ineffective right. So here comes Convolutional Neural Network or CNN. In simple word what CNN does is, it extract the feature of image and convert it into lower dimension without loosing its characteristics. In the following example you can see that initial the size of the image is 224 x 224 x 3. If you proceed without convolution then you need 224 x 224 x 3 = 100, 352 numbers of neurons in input layer but after applying convolution you input tensor dimension is reduced to 1 x 1 x 1000. It means you only need 1000 neurons in first layer of feedforward neural network.
+
 Reference Code :
 ```Python
 #@title Image Selection (don't forget to execute the cell!) { display-mode: "form"}
